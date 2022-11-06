@@ -76,7 +76,22 @@ for (let x of array2) {
         console.log(x);
     }
 }
+// 7
+function newfunction(...numb){
+    let sum = 0;
+    for (let item of numb){
+        if (item > 0){
+            sum=item + sum;
+        }
+    }
+    return sum;
 
+}
+
+// 8
+
+let resaltfunction = newfunction (2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 80);
+console.log(resaltfunction);
 
 // 10
 let array3 = [1,2,4,10,34,5,7,87]
