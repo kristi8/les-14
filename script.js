@@ -88,10 +88,35 @@ function newfunction(...numb){
 
 }
 
-// 8
-
 let resaltfunction = newfunction (2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 80);
 console.log(resaltfunction);
+
+// 8
+
+let user3 = {
+    firstname: 'giorgi',
+    lastname: 'saakadze',
+    age: 32,
+    isloggedin: true
+  }
+
+  function printName (user3){
+    if (user3.isloggedin){
+        return user3.firstname + " " + user3.lastname;
+    } 
+        return false;
+    
+  }
+  let result = printName (user3);
+  console.log(result);
+
+//   9
+
+function max(...array4) {
+    console.log (Math.max(...array4));
+}
+
+max(10, 3,25, 50,  35, 95, 44);
 
 // 10
 let array3 = [1,2,4,10,34,5,7,87]
